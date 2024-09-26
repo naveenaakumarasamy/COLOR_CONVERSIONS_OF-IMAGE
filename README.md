@@ -62,12 +62,12 @@ o	Save the final modified image to your local directory.
 ### i)Read and Display an Image
 ```
 import cv2
-image=cv2.imread('panda.jpg',1)
+image=cv2.imread('b.jpg',1)
 cv2.imshow('Image Window', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/95ec792c-f40d-423e-ab71-2255ede1ba1f)
+![image](https://github.com/user-attachments/assets/d5aed9b0-7c19-4ef1-84a8-6ee19c031df5)
 
 <br>
 <br>
@@ -76,7 +76,7 @@ cv2.destroyAllWindows()
 i)Draw a line from the top-left to the bottom-right of the image.
 ```
 import cv2
-img = cv2.imread("panda.jpg")
+img = cv2.imread("b.jpg")
 res = cv2.line(img, (0, 0), (1099, 799), (200, 100, 205), 10)
 cv2.imshow('Image Window', res)
 cv2.waitKey(0)
@@ -84,30 +84,24 @@ cv2.destroyAllWindows()
 
 
 ```
-![image](https://github.com/user-attachments/assets/eea784bb-eb94-4af8-a5eb-481dc62a2457)
+![image](https://github.com/user-attachments/assets/32667b3d-d6f8-4f64-91d4-f1edc24b6064)
 
 ii)Draw a circle at the center of the image.
 ```
+
+
 import cv2
 
-# Load the image
-img = cv2.imread("panda.jpg")
+img = cv2.imread("b.png")
 
-# Get the dimensions of the image
-height, width, _ = img.shape
+res=cv2.circle(img,(100,100),100,(200,0,0),10)
 
-# Calculate the center of the image
-center_coordinates = (width // 2, height // 2)
-
-# Draw a circle at the center of the image
-res = cv2.circle(img, center_coordinates, 150, (255, 0, 0), 10)
-
-# Display the image with the circle
+# Display the HSV image
 cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/eb4d16ce-21a7-427e-9ac3-e99651a3283b)
+![image](https://github.com/user-attachments/assets/4fa7cabe-c7ba-4d6b-b1fe-327e2708ade6)
 
 iii)Draw a rectangle around a specific region of interest in the image.
 ```
@@ -124,7 +118,7 @@ cv2.imshow('Image Window', res_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/a501d0f7-5d5c-4f27-8866-c3cb36314d1c)
+![image](https://github.com/user-attachments/assets/e33ec6d8-29fb-4713-a567-3fc60f2e9431)
 
 
 iv)Add the text "PANDA" at the top-left corner of the image.
@@ -153,7 +147,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![image](https://github.com/user-attachments/assets/272ac12c-27f6-44ea-8ce7-7a988bec4584)
+![image](https://github.com/user-attachments/assets/7bfdcd9e-a9ea-41bf-bc30-bf7d77d132a0)
 
 <br>
 <br>
@@ -170,7 +164,7 @@ cv2.imshow('RGB2HSV',hsv2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/8c45ab3d-2ccd-4774-b6df-7c354ba24694)
+![image](https://github.com/user-attachments/assets/ebe21ed0-727e-431e-a614-caa4dcd32246)
 
 ii.)Convert the image from RGB to GRAY and display it.
 ```
@@ -183,7 +177,7 @@ cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/688e73a3-1f1d-41a3-a51c-0ab2992337bb)
+![image](https://github.com/user-attachments/assets/84199410-5b2e-44e8-8099-62ba4d279a14)
 iii.)Convert the image from RGB to YCrCb and display it.
 ```
 import cv2
@@ -195,7 +189,7 @@ cv2.imshow('RGB-2-YCrCb',YCrCb1)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/3dced8f9-6777-4544-99c0-89a39e6d79a4)
+![image](https://github.com/user-attachments/assets/15046968-99eb-4028-a524-5c2d01042766)
 iv.)Convert the HSV image back to RGB and display it.
 ```
 import cv2
@@ -208,7 +202,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![image](https://github.com/user-attachments/assets/d409a35c-45fa-4192-9dfc-bc8570cf81d8)
+![image](https://github.com/user-attachments/assets/1f50d6d5-f749-40ab-a7da-685e0ab655bb)
 
 <br>
 <br>
@@ -239,9 +233,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
-![image](https://github.com/user-attachments/assets/ec9e7025-cae2-4e84-9fa0-3ac3eb477cd9)
+![image](https://github.com/user-attachments/assets/5e2f0fe3-ecfa-4d45-8f93-7da690b373df)
 
-![image](https://github.com/user-attachments/assets/3daabe1e-4587-4218-a9fa-84e0920d4d82)
 
 <br>
 <br>
@@ -259,7 +252,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![image](https://github.com/user-attachments/assets/2e0858d4-3a48-4bfe-834c-0bff33096473)
+![image](https://github.com/user-attachments/assets/68aa3cda-136c-4cce-a2cd-a8313c71a963)
+![image](https://github.com/user-attachments/assets/588aa82f-4371-43cd-9e90-2b821cd1f4fc)
 
 <br>
 <br>
@@ -283,7 +277,6 @@ cv2.imshow('Cropped Image', roi)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/c5a2c209-d4f6-4fdf-b0bf-448f90365428)
 
 <br>
 <br>
@@ -300,7 +293,7 @@ cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/06be2d2e-d9a0-4bc6-9b00-af47050b57dc)
+![image](https://github.com/user-attachments/assets/6d75f529-ddad-4827-8c2e-c2de775079d2)
 ii.)Flip the original image vertically and display it.
 ```
 import cv2
@@ -314,7 +307,8 @@ cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/04e8d8d4-e476-47b6-b3fc-a8a807fef19c)
+![image](https://github.com/user-attachments/assets/a73e4e00-3ea0-47fb-9cf3-90af75caab05)
+![Uploading image.png…]()
 
 <br>
 <br>
