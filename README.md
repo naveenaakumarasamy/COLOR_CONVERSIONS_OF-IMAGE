@@ -308,7 +308,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ![image](https://github.com/user-attachments/assets/a73e4e00-3ea0-47fb-9cf3-90af75caab05)
-![Uploading image.png…]()
+
 
 <br>
 <br>
